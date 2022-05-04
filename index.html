@@ -21,10 +21,14 @@
                     </p>
                     <div class="requestContainer">
                         <div class="emailContainer">
-                            <div id="emailInput"><p>Email Address</p></div>
+                            <div id="emailInput">
+                                <form>
+                                    <input type="text" name="emailAddress" id="emailAddress" value="Email Address">
+                                </form>
+                            </div>
                             <div id="requestButton"><p>Request Access</p></div>
                         </div>  
-                        <p id="oops">Oops! Please check your email</p>
+                        <p id="inputAlert"></p>
                     </div>
                     <div class="partnerContainer">
                         <img id="spotifyPodLogo" src="./res/img/spotify.svg" width="96" height="29">
@@ -38,4 +42,5 @@
 
         </main>
     </body>
+    <script src="./script.js"></script>
 </html>

@@ -98,14 +98,12 @@ p {
     height: auto;
 }
 
-#emailInput p {
+#emailInput form {
     width: 100px;
     height: auto;
-    font-size: 14px;
-    font-weight: 700;
-    color: #FFFFFF;
     opacity: 50%;
     margin-left: 32px;
+    cursor: text;
 }
 
 #requestButton {
@@ -142,11 +140,19 @@ p {
     height: 29px;
 }
 
-#oops {
+#inputAlert {
     display: none;
     position: absolute;
     margin: 8px 0 0 32px;
-    color: #FB3E3E;
     font-size: 12px;
     font-weight: bold;
+}
+
+input {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 700;
 }
