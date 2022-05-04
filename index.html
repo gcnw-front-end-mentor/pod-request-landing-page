@@ -11,25 +11,31 @@
     <body>
         <main>
             <img id="podImage" src="./res/img/logo.svg" alt="Pod Request Logo" width="134.85" height="56">
-            <div class="infoFocus">
-                <h1>PUBLISH YOUR PODCASTS<br><span>EVERYWHERE</span></h1>
-                <p>
-                    Upload your audio to Pod with a single click. We'll
-                    then distrubute your podcast to Spotify, Apple Podcasts, 
-                    Google Podcasts, Pocket Casts and more!
-                </p>
-                <div class="requestContainer">
-                    <div id="emailInput"></div>
-                    <div id="requestButton"></div>
-                </div>
-                <img id="dotsOverlay" src="./res/img/bg-pattern-dots.svg" alt="8-by-4 array of dots" width="232" height="104">
-                <div class="partnerContainer">
-                    <img id="spotifyPodLogo" src="./res/img/spotify.svg" width="96" height="29">
-                    <img id="applePod" src="./res/img/apple-podcast.svg" width="78" height="29">
-                    <img id="googlePodLogo" src="./res/img/google-podcasts.svg" width="125" height="18">
-                    <img id="pocketCastLogo" src="./res/img/pocket-casts.svg" width="129" height="26">
+            <div class="emptyRegion">
+                <div class="infoFocus">
+                    <h1>PUBLISH YOUR PODCASTS<br><span>EVERYWHERE</span></h1>
+                    <p>
+                        Upload your audio to Pod with a single click. We'll
+                        then distrubute your podcast to Spotify, Apple Podcasts, 
+                        Google Podcasts, Pocket Casts and more!
+                    </p>
+                    <div class="requestContainer">
+                        <div class="emailContainer">
+                            <div id="emailInput"><p>Email Address</p></div>
+                            <div id="requestButton"><p>Request Access</p></div>
+                        </div>  
+                        <p id="oops">Oops! Please check your email</p>
+                    </div>
+                    <div class="partnerContainer">
+                        <img id="spotifyPodLogo" src="./res/img/spotify.svg" width="96" height="29">
+                        <img id="applePod" src="./res/img/apple-podcast.svg" width="78" height="29">
+                        <img id="googlePodLogo" src="./res/img/google-podcasts.svg" width="125" height="18">
+                        <img id="pocketCastLogo" src="./res/img/pocket-casts.svg" width="129" height="26">
+                    </div>
                 </div>
             </div>
+            <img id="dotsOverlay" src="./res/img/bg-pattern-dots.svg" alt="8-by-4 array of dots" width="232" height="104">
+
         </main>
     </body>
 </html>

@@ -9,14 +9,14 @@
 
 html {
     font-family: Chivo;
-    font-weight: 300;
+    cursor: default;
 }
 
 body {
     background-color: #121725;
     display: flex;
     height: 100vh;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -27,24 +27,126 @@ main {
     background-repeat: no-repeat;
     width: 1275px;
     height: 640px;
+    justify-content: space-between;
+    align-items:flex-end;
 }
 
 h1 {
     color: #54E6AF;
     font-size: 52px;
+    font-weight: 300;
+    width: 665px;
+    height: 124px;
 }
 
 h1 span {
     color: #FFFFFF;
+    font-size: inherit;
 }
 
 p {
+    width: 445px;
+    height: 84px;
+    line-height: 28px;
     font-size: 18px;
     color: #C2CBE5;
+
 }
 
-.infoFocus {
+.emptyRegion {
+    display: flex;
+    align-items: flex-end;
     width: 723px;
     height: 509px;
     background-color: #121725;
+
+}
+
+.infoFocus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    width: 635px;
+    height: 421px;
+    background-color: #121725;
+}
+
+#podImage {
+    position: absolute;
+    align-self: flex-start;
+}
+
+#dotsOverlay {
+    margin-bottom: -52px;
+}
+
+
+.emailContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C344B;
+    border-radius: 28px;
+    width: 427px;
+    height: 56px;
+}
+
+#emailInput {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    height: auto;
+}
+
+#emailInput p {
+    width: 100px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    opacity: 50%;
+    margin-left: 32px;
+}
+
+#requestButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 162px;
+    height: 46px;
+    margin: 5px;
+    background-color: #54E6AF;
+    border-radius: 28px;
+}
+
+#requestButton:hover {
+    color: #121725;
+    background-color: #B3FFE2;
+    cursor: pointer;
+
+}
+
+#requestButton p {
+    color: #121725;
+    font-size: 14px;
+    font-weight: 700;
+    width: 108px;
+    height: 28px;
+}
+
+.partnerContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 536px;
+    height: 29px;
+}
+
+#oops {
+    display: none;
+    position: absolute;
+    margin: 8px 0 0 32px;
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: bold;
 }
