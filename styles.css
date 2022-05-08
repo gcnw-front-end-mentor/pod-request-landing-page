@@ -155,4 +155,105 @@ input {
     line-height: 28px;
     font-size: 14px;
     font-weight: 700;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 376px){
+    main {
+        background-image: url('./res/img/image-host_tablet.jpg');
+        max-width: 1275px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url('./res/img/image-host_mobile.jpg');
+        background-position: top;
+        max-width: 375px;
+    }
+
+    h1 {
+        font-size:28px;
+        text-align: center;
+        width: inherit;
+        height: fit-content;
+        padding: 10px 0px;
+    }
+
+    p {
+        width: 375px;
+        height: 84px;
+        line-height: 28px;
+        font-size: 14px;
+        color: #C2CBE5;
+        text-align: center;
+    }
+
+    .emptyRegion {
+        opacity: 1;
+        width: 355px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .infoFocus {
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: fit-content;
+        background-color: #121725;
+        padding: 0;
+        justify-content: center;
+        align-content: center;      
+    }
+
+    #podImage {
+        position: relative;
+        margin-bottom: 250px;
+        margin-left: 10px;
+
+    }
+
+    .emailContainer {
+        width: inherit;
+        margin: 10px;
+    }
+
+    #dotsOverlay {
+        display: none;
+    }
+
+    .partnerContainer {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        justify-content: space-between;
+        width: inherit;
+        height: auto;
+        row-gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    #inputAlert {
+        display: none;
+        position: absolute;
+        margin-top: -14px; 
+        margin-left: -6px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
 }
